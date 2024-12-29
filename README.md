@@ -1,6 +1,6 @@
 # machine_Learning_PRACTICES_work
 
-## Support Vector Machine (SVM) for Loan Application Prediction
+## 1. Support Vector Machine (SVM) for Loan Application Prediction
 
 Support Vector Machines (SVM) is a supervised machine learning algorithm used for classification and regression tasks. It works by finding the optimal hyperplane that separates data points into different classes. In this project, we will use SVM to predict loan application status based on applicant details.
 
@@ -34,6 +34,41 @@ Experiment with different kernels (linear, rbf, etc.) to find the best-performin
 
 9. Visualize the Decision Boundary
 For datasets with two numerical features, plot the decision boundary to visualize how the SVM classifier separates the classes.
+
+
+
+
+## 2.  Decision Tree || Car Brand Prediction
+
+A Decision Tree is a supervised machine learning algorithm used for classification and regression tasks. It works by splitting the dataset into smaller subsets based on feature values, eventually forming a tree-like structure with decision nodes and leaf nodes. Below is a step-by-step guide to training and evaluating a decision tree.
+
+1. Data Preparation
+Load the dataset using pandas.
+Handle missing values and encode categorical features.
+Split the data into training and testing sets (e.g., 80:20 ratio).
+
+2. Initialize the Decision Tree Classifier
+Use the DecisionTreeClassifier from sklearn with desired parameters:
+criterion: "gini" or "entropy"
+splitter: "best" or "random"
+max_features: Number of features to consider for the best split.
+max_depth: Maximum depth of the tree.
+
+3. Train the Model
+Fit the classifier on the training data using:
+
+4. Evaluate the Model
+Test the model on the test data.
+Generate metrics like accuracy, precision, recall, and F1-score.
+
+5. Visualize the Tree
+Use plot_tree from sklearn.tree to visualize the decision tree.
+
+6. Fine-Tune Parameters
+Experiment with parameters like max_depth, min_samples_split, and ccp_alpha to optimize performance.
+
+
+
 
 
 

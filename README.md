@@ -8,26 +8,31 @@ Support Vector Machines (SVM) is a supervised machine learning algorithm used fo
 Load the dataset into a DataFrame using pandas.
 
 2. Data Preprocessing
+   
 **a>** Handle Missing Values: Identify and fill missing values with appropriate imputation techniques (e.g., mean for numerical columns and mode for categorical columns).
-**b>** Encode Categorical Variables: Convert Gender and Loan Status columns into numerical format (e.g., Male = 1, Female = 0; Y = 1, N = 0).
-**c> **Feature Selection: Drop the Loan ID column as it does not contribute to the prediction task.
 
-3. Split the Dataset
+**b>** Encode Categorical Variables: Convert Gender and Loan Status columns into numerical format (e.g., Male = 1, Female = 0; Y = 1, N = 0).
+
+**c>** Feature Selection: Drop the Loan ID column as it does not contribute to the prediction task.
+
+4. Split the Dataset
 Split the dataset into training (80%) and testing (20%) sets using train_test_split().
 
-4. Feature Scaling
+5. Feature Scaling
 Apply StandardScaler() to standardize numerical columns (ApplicantIncome and LoanAmount) for better SVM performance.
 
-5. Build and Train the SVM Model
+6. Build and Train the SVM Model
 Use the SVC class from sklearn to train the model.
 Experiment with different kernels (linear, rbf, etc.) to find the best-performing model.
 
-6. Evaluate the Model
+7. Evaluate the Model
+   
 **Classification Report:** Generate precision, recall, and F1-score for each class.
-**Confusion Matrix:** Plot a heatmap to visualize the classification results.
-**Accuracy Score: **Measure the overall accuracy of the model.
 
-7. Visualize the Decision Boundary
+**Confusion Matrix:** Plot a heatmap to visualize the classification results.
+**Accuracy Score:** Measure the overall accuracy of the model.
+
+9. Visualize the Decision Boundary
 For datasets with two numerical features, plot the decision boundary to visualize how the SVM classifier separates the classes.
 
 

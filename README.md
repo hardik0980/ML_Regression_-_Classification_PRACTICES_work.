@@ -69,7 +69,7 @@ Experiment with parameters like max_depth, min_samples_split, and ccp_alpha to o
 
 
 
-## K-Nearest Neighbors (KNN) || Car Prediction
+## 3. K-Nearest Neighbors (KNN) || Car Prediction
 
 K-Nearest Neighbors (KNN) is a supervised machine learning algorithm used for classification and regression tasks. It is one of the simplest and most intuitive algorithms, based on the idea of instance-based learning or lazy learning. In KNN, the prediction for a new data point is made based on the majority class (for classification) or the average of the target values (for regression) of its nearest neighbors in the feature space.
 
@@ -97,6 +97,7 @@ Use train_test_split() to split the data into training and testing sets (e.g., 8
 
 
 
+
 ## 4. Linear Regression || Housing price Prediction
 
 Load the housing_price.csv dataset to a DataFrame and perform the following tasks:
@@ -110,6 +111,8 @@ Perform the below task and build a model.
 5. Print R2 vallue, coefficient and intercept
 6. Compare actual and predicted values.
 7.Print the final summary
+
+
 
 
 ## 5. Logistic Regression || Heart Disease Prediction 
@@ -143,7 +146,12 @@ Plot the decision boundary for binary classes (0 and 1) to illustrate how the mo
 
 
 
-## 6. Principal Component Analysis (PCA) on the Iris Dataset
+@ Unsupervise Machine Learning
+# Unsupervise Machine Learning
+
+
+
+## 6. Principal Component Analysis(PCA) || Dimension Reduction || unsupervise ML
 
 In this post, we will explore the Iris dataset and perform dimensionality reduction using Principal Component Analysis (PCA). PCA helps in reducing the number of features in a dataset while retaining the most important information, making it easier to visualize and interpret.
 
@@ -158,4 +166,78 @@ Noise Reduction: Helps remove less important features that may introduce noise i
 The projection is done by multiplying the original dataset by the matrix of eigenvectors (principal components).
 
 
-## 7.
+
+
+
+## 7.Linear Discriminant Analysis || Dimension Reduction || unsupervise ML
+Linear Discriminant Analysis (LDA) is a supervised machine learning technique used for dimensionality reduction while preserving class separability. Unlike PCA, which focuses on maximizing variance, LDA aims to find a lower-dimensional space that maximizes the separation between multiple classes in a dataset.
+
+**Step 2: Why Use LDA?**
+**LDA is particularly useful when:**
+1. You want to reduce the number of features while preserving the class separability.
+2. You have labeled data (like the Iris dataset) and are interested in visualizing the data in a lower-dimensional space (e.g., 2D or 3D) that best separates the different classes.
+   
+While PCA focuses on preserving the variance in the dataset, LDA focuses on preserving the separation between different classes
+
+2. **Visualization**
+Now that the data has been reduced to 2D or 3D using LDA, we can plot the transformed data. The goal is to see a clear separation between the three Iris species in the reduced feature space. A scatter plot with the first and second principal components as axes should show distinct clusters for each species.
+
+
+
+
+## 8.  Hierarchical Clustering || Shopping Data || unsupervise ML
+Hierarchical clustering is an unsupervised machine learning technique used to group similar data points into clusters. It builds a hierarchy of clusters, where each cluster is a collection of data points that are similar to each other.
+
+**Agglomerative (Bottom-Up) Method:** Starts with each data point as its own cluster and progressively merges the closest clusters.
+
+**Divisive (Top-Down) Method:** Starts with all data points in a single cluster and progressively splits them into smaller clusters.
+The **Agglomerative** method is the most commonly used form of hierarchical clustering.
+
+**Distance Measure**
+Hierarchical clustering requires a measure of "distance" between data points to decide how to group them. 
+
+**Dendrogram**
+The results of hierarchical clustering are often visualized using a dendrogram. A dendrogram is a tree-like diagram that shows the merging process. Each leaf represents an individual data point, and branches represent the merging of clusters.
+
+
+
+
+
+## K-Means Clustering 
+K-Means Clustering is a popular unsupervised learning algorithm used to partition data into k distinct clusters based on similarity. The goal is to group data points so that points within the same cluster are more similar to each other than to those in other clusters.
+
+**Unsupervised Learning:** K-Means does not require labeled data. It finds patterns by grouping similar data points together.
+
+**Clustering:** K-Means assigns each data point to one of the 
+𝑘 clusters, and the algorithm aims to minimize the distance between the points and the centroids of the clusters.
+
+
+**Step 1: Load the CSV File**
+Load the dataset into a DataFrame using a library like Pandas. This helps you explore and clean the data before clustering.
+
+**Step 2: Handle Missing Values and Unnecessary Columns**
+Check for missing values and either fill or drop them.
+Remove irrelevant columns that won't contribute to clustering (e.g., ID columns).
+
+**Step 3: Univariate and Bivariate Analysis**
+Univariate Analysis: Understand the distribution of individual features using histograms or summary statistics.
+Bivariate Analysis: Explore relationships between features using scatter plots or correlation matrices to see how variables relate.
+
+**Step 4: Standardize the Data**
+Standardize the dataset so that all features have a similar scale. This prevents features with larger ranges from dominating the clustering process.
+
+**Step 5: Determine the Optimal Number of Clusters (k)**
+Use the Elbow Method: Plot the Within-Cluster Sum of Squares (WCSS) for different k values. The "elbow" point indicates the optimal k.
+Use the Silhouette Score: This score measures how well-defined the clusters are. Higher scores indicate better clustering.
+
+**Step 6: Build the K-Means Model**
+Apply the K-Means algorithm with the chosen k. The algorithm will assign each data point to one of the k clusters.
+
+**Step 7: Evaluate the Clusters**
+Check the cluster centroids to understand the characteristics of each cluster.
+Calculate the Silhouette Score to evaluate the quality of clustering.
+
+**Step 8: Final Model**
+Build the final K-Means model with the chosen k and print the centroids of all clusters. The centroids represent the center of each cluster, which you can use to interpret the clusters’ behavior.
+
+

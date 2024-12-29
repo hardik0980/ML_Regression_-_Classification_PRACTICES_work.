@@ -142,3 +142,20 @@ Calculate the accuracy score to measure overall performance.
 Plot the decision boundary for binary classes (0 and 1) to illustrate how the model distinguishes between them
 
 
+
+## 6. Principal Component Analysis (PCA) on the Iris Dataset
+
+In this post, we will explore the Iris dataset and perform dimensionality reduction using Principal Component Analysis (PCA). PCA helps in reducing the number of features in a dataset while retaining the most important information, making it easier to visualize and interpret.
+
+**Why use PCA?**
+**Dimensionality Reduction:** Reduces the number of features while preserving the essential patterns in the data.
+**Improved Visualization:** Allows for visualizing high-dimensional data in lower dimensions (e.g., 2D or 3D).
+Noise Reduction: Helps remove less important features that may introduce noise in the data.
+**Dimensionality Reduction:** Reduces the number of features while preserving the essential patterns in the data.
+
+**Projecting Data onto Principal Components**
+**Once the principal components are identified, the original data is projected onto these new axes. This results in a transformed dataset with reduced dimensions. For example, if we reduce the Iris dataset from 4 dimensions to 2 dimensions, we will have two new features (PC1 and PC2) that explain most of the variance in the data.**
+The projection is done by multiplying the original dataset by the matrix of eigenvectors (principal components).
+
+
+## 7.

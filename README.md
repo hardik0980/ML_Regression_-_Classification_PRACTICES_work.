@@ -203,7 +203,7 @@ The results of hierarchical clustering are often visualized using a dendrogram. 
 
 
 
-## K-Means Clustering 
+## K-Means Clustering || unsupervise ML
 K-Means Clustering is a popular unsupervised learning algorithm used to partition data into k distinct clusters based on similarity. The goal is to group data points so that points within the same cluster are more similar to each other than to those in other clusters.
 
 **Unsupervised Learning:** K-Means does not require labeled data. It finds patterns by grouping similar data points together.
